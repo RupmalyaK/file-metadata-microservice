@@ -1,0 +1,90 @@
+﻿JS Theory Revision.
+
+Variable:-
+1:-A named location in the memory that is used to store a value which can change during the execution of the program. 
+2:-JS is dynamic so we do not need to prove the data-type of the variable at it's declaration as any variable can hold any type of value.
+3:-It has name assosciated with it to identify the variable.
+4:-We can declare a variable using var or let keyword. 
+.......................................................................................
+Constant:-
+1:-A named location in the memory that is used to store a value which cannot change during the execution of the program.
+2:-We can declare a constant in ecmaScript 6 by using const keyword followed by it's name.
+3:-It has name assosciated with it to identify the constant.
+.......................................................................................
+Condition Statements:-
+1:-Conditional statements are used to manipulate the control-flow of a program.It is used to implement decision-based flow in the program. 
+2:-If a certain specified condition is TRUE it will execute certain given codes and if the condition is FALSE it will execute certain other given codes.
+3:-Examples of conditional statements are if and else statement , switch statement and ternary operator
+.......................................................................................
+Logical Operators:-
+.......................................................................................
+1:-Logical operators are used to perform logical operation on it's operands/operand.Logical operations returns the first operand that breaks the evaluation.This is why it is also known as short-circuit evaluation.
+.......................................................................................
+Loop(Iterative statements):-
+1:-Loop is an iterative statement that is used to manipulate the constrol flow of a program.
+2:-It is used to iterate or repeat certain given instructions multiple times till a certain specified condition is TRUE and if the condition is FALSE the control will break out of the loop.
+3:-Loops can be entry-controlled or exit-controlled.
+5:-Entry controlled loops check the condition before executing the given instructions.
+6:-Exit controlled first execute the given instructions and then check the condition.It will execute at least once even if the condition is FALSE. 
+.......................................................................................
+Reference of a Data:-
+1:-Address of the starting memory location of the block of memory allocated for the data.
+2:-Address through which a compiler or an interpreter can identify the data. 
+.......................................................................................
+Object:-
+1:-Object is a complex data type in JS.
+2:-Object is the only complex data-type available for the programmer to use in JS.
+3:-Object can store a collection of data values which can be of different types including functions and other objects. 
+4:-Object often times can be an instance of a blueprint or a template.We can create multiple instantiated objects from a single blueprint or a template.  
+5:-In JS every object has a reference to a prototype object which act as it's delegate or backup object.If JS interpreter cannot find the variable used in the Object, it searches for it in the object's prototype object. 
+6:-Objects are also used to make the program modular and increase the reusability of the code.
+7:-In JS all the data values in an object has a name assosciated with it which is known as it's.Using that key we can access the data value using dot or bracket notation. 
+8:-We can access each indivisual data element of an object by it's key using bracket(incase of accessing through a string variable or invalid identifier as key) or dot notation.
+9:-In JS a variable store the reference to an object rather than the actual value of the object.So the value of the variable is the address of the starting memory location of the block of memory allocated for the object.
+20:-The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.  
+.......................................................................................
+Function:-
+1:-Function is a group or set of instructions used to perform or execute similiar and well defined tasks.
+2:-Functions are mostly used to break the program into modules so that to increase the reusability of the code. 
+3:-Functions has 2 parts : Function definition and function call. 
+4:-Function definition is where the function is implemented.
+5:-Function call is where function gets executed. 
+6:-In C memory for the stack-frame of the function which includes it's return address , return value , parameters and local variables get allocated in the stack segment. 
+7:-In JS functions are also first class Object.
+8:-Reference to a function can be asigned to a Variable in JS.
+9:-Reference to a function can be passed as an argument to another higher-order function.
+10:-Function can be returned from another higher-order function.
+11:-Function can be defined inside another function. 
+12:-Higher Order function is a function that either takes one or more functions as it's argument or return a function. 
+13:-Passing a function as an argument to another function is known as Function callback.
+14:-Recursion is the process in which a function calls itself directly or indirectly.
+15:-A Call Stack is a stack data structure so it is a last in first out data structure, in this data structure only the last element inserted can be deleted.In this data structure insertion and deletion are performed on the same end of the data structure. 
+A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run, what functions are called from within that function and should be called next, etc.
+When a script calls a function, the interpreter adds it to the call stack and then starts carrying out the function.
+Any functions that are called by that function are added to the call stack further up, and run where their calls are reached.
+When the main function is finished, the interpreter takes it off the stack and resumes execution where it left off in the main code listing.
+16:-If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.
+17:-In JS functions are also closure and a closure is an inner function that has access to the outer (enclosing) function's variables—scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function's variables, and it has access to the global variables.
+18.Anynomous function is a function that does not have a name assosciated with it.
+19.Immediately invoked function is an anynomous function that is immediately called after it's definition. 
+.......................................................................................
+Array:-
+1:-Array is a Data Structure.It is a way of collecting, organizing, and storing the collection of the data in the memory of a computer in such a way that we can efficiently access each indivisual data element and perform other operations to it also efficiently. 
+2:-In other programming languages array allocate a contiginious block of memory of a fixed length. 
+3:-In other programming languages array store all of it's data elements in a contiginious memory location. 
+4:-In other programming languages array can store a collection of data of the same size or type.
+5:-In other programming languages size of the array can not be increased as the memory location next to the array might not be free for allocation.
+6:-We can access each element in an array by it's index number.
+7:-Starting index number in an array is 0. 
+8:-It takes constant amount of time to access a data element using it's index number.
+9:-However in JS arrays are also Objects.
+10:-Like Object, in JS array can store multiple data which can be of different types or functions. 
+.......................................................................................
+Linked List:-
+1:-Linked list is also a data structure.
+2:-Linked List can store it's data elements in non-contiginious blocks of memory. 
+3:-Each block of memory is known as a node or vertex of a linked list. 
+4:-Each node has a reference in it , which has it's value set as the address of the starting memory location of the block of memory allocated for the next node. 
+.......................................................................................
+Global Object:-
+1:-In browser's JS engine any variable declare outside of an object(including function)'s scope get declared inside of the global or window object, which is not the case in Node.js
